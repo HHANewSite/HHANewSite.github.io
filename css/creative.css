@@ -744,10 +744,10 @@ fieldset[disabled] .btn-primary.active {
 .btn {
     border: 0;
     border-radius: 300px;
-    text-transform: uppercase;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
-    font-size: x-small;
+    filter: drop-shadow(1px 2px 2px rgba(0,0,0,0.16));
+  
 }
 
 .btn-xl {
@@ -987,5 +987,17 @@ transform: translate(-50%);
   .workshop-flex-container{
     min-width: auto;
     max-height: none;
+  }
+}
+
+@media (max-width:767px){
+  #help-img{
+    margin-top:40px;
+  }
+}
+
+@media (min-width:768px){
+  #help-img{
+    margin-top:-60px;
   }
 }
