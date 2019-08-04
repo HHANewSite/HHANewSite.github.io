@@ -1,4 +1,5 @@
-/*!
+
+ /*!
  * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
@@ -690,7 +691,7 @@ fieldset[disabled] .btn-default.active {
 .btn-seconday {
     border-color: #F07013;
     color: #ffffff;
-    background-color: #F07013;
+    background: linear-gradient(to bottom right, #F17014, #FFC400);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
