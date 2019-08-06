@@ -530,7 +530,7 @@
 
                 <div class="help-form" style="margin-top: -5px; text-align: center">
                     
-                    <form>
+                  <form action="https://formspree.io/anton@helpinghandsapp.com" method="POST">
                         <script type="text/javascript">
                           //auto expand textarea
                           function adjust_textarea(h) {
@@ -538,12 +538,13 @@
                               h.style.height = (h.scrollHeight)+"px"; }
                         </script>
 
-                      <input type="text" name="field1" placeholder="Name" />
-                      <input type="email" name="field2" placeholder="Email" />
-                      <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea>
-                      <input type="submit" value="SUBMIT" class="btn btn-seconday btn-xl" style="border: 0; margin-top:15px; padding-top: 5px; font-size: 15px; height: 30px;" />
+                      <input type="text" name="name" placeholder="Name" />
+                      <input type="email" name="_replyto" placeholder="Email" />
+                      <textarea placeholder="Message" name="messafe" onkeyup="adjust_textarea(this)"></textarea>
+                      <input type="submit" value="Send" class="btn btn-seconday btn-xl" style="border: 0; margin-top:15px; padding-top: 5px; font-size: 15px; height: 30px;" />
                     </form>
-                    
+
+          
                   </div>
                </div>
             </div>
@@ -665,48 +666,6 @@
 
 
 
-4 months ago
-<?php
-if (isset($_POST['name']) && isset($_POST['email'])) {
- $name = $_POST['name'];
- $email = $_POST['email'];
- $to = 'antondilon@gmail.com';
- $subject = "New Message on KristjanMark.com";
- $body = '<html>
-    <body>
-     <h2>Title</h2>
-     <br>
-     <p>Name:<br>'.$name.'</p>
-     <p>Email:<br>'.$email.'</p>
-
-    </body>
-   </html>';
-
-//headers
-$headers  = "From: ".$name." <".$email.">\r\n";
-$headers .= "Reply-To: ".$email."\r\n";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-type: text/html; charset-utf-8";
-
-//send
-$send = mail($to, $subject, $body, $headers);
-if ($send) {
- echo '<br>';
- echo "Success. Thanks for Your Message.";
-} else {
- echo 'Error.';
-}
-}
-?>
-
-
-
-
-<form action="" method="post">
-   <input type="text" name="name" placeholder="Your Name"><br>
-   <input type="text" name="email" placeholder="Your Email"><br>
-   <button type="submit">Subscribe</button>
-  </form>
 
 
 
