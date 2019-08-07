@@ -271,22 +271,31 @@ header .header-content .header-content-inner p {
 
 @media  (max-width:1403px) {
   header #landing-header{
-    margin-top: -100px;
+    margin-top: 0px;
  }
- header .landing-pg-flex-container{
-   margin-top:250px;
+ header .flex-container1{
+   margin-top:17%;
  }
 }
+
+@media  (max-width:700px) {
+  header #landing-header{
+    margin-top: 0px;
+ }
+ header .flex-container1{
+   margin-top:27%;
+ }
+}
+
 
 @media  (min-width:1403px) {
   header #landing-img{
-    margin-top: 300px;
+    margin-top: 15%;
  }
- header .landing-pg-flex-container{
+ header .flex-container1{
   margin-top:50px;
  }
 }
-
 
 
 /**/
